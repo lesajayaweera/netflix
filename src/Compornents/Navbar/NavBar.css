@@ -1,0 +1,120 @@
+/* Main Container */
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top,transparent 0%,rgb(0,0,0,0.7) 50%);
+}
+/* for the Main Container when the  page is scrolled */
+.navbar-scrolled{
+    background-color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+/* Second Main Container */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:  20px;
+}
+
+/* Netflix Logo */
+.logo{
+    max-width: 150px;
+}
+.logo:hover{
+    cursor: pointer !important;
+}
+
+/* Left Sub container of the main Container */
+.left{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+/* all the links for the rest of the pages  */
+.left p{
+    color: white;
+    transition: all 0.2s ;
+}
+.left p:hover,.left p:focus{
+    text-decoration: underline;
+    font-weight: 600;
+    color: red;
+    cursor: pointer;
+}
+.left p:active{
+    color: yellow;
+}
+
+/* Right Sub container of the main Container */
+.right{
+    width:150px;
+    display: flex;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Profile picture  */
+.profile-pic{
+    max-width: 50px;  
+    border-radius: 100%;
+}
+.profile-pic:hover{
+    cursor: pointer ;
+}
+
+/* All the icons in the nav bar */
+.icons{
+    margin: 0;
+    color: white;
+    transition: all 0.2s;
+}
+.icons:hover{
+    color: red;
+    cursor: pointer;
+}
+.icons:active{
+    color: yellow;
+}
+
+/* Options which Includes the Settings and the Logout options */
+.options{
+    display:none;
+    border-radius: 10px;
+}
+.options span{
+    margin: 3px;
+    transition: all 0.2s;
+}
+.options span:hover{
+    color: red;
+    font-weight: 550;
+}
+
+/*  Container which holds the profile Image and the option Container */
+.image-profile-main-container{
+    display: flex;
+    align-items: center;
+}
+.profile-container{
+    cursor: pointer;
+}
+.profile-container:hover{
+    .options{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--main-color);
+        padding: 15px;
+        color: white;
+    }
+}

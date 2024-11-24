@@ -2,7 +2,7 @@ import React from 'react'
 import "./NavBar.css"
 import logo  from "../../images/netflix.png";
 import profilePic from "../../images/profile-pic.jpg";
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <div className='navbar'>
         <div className="container">

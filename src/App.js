@@ -1,11 +1,15 @@
 // import logo from './logo.svg';
 import './App.css';
-import Home from './Home/home'
+import  Home from './Home/home'
 
 function App() {
-  return(
-    <Home></Home>
-  )
+  return (
+    <>
+      <Home></Home>
+     {/* <h1>Welcome to React</h1>*/}
+      
+    </>
+  );
 }
 
 export default App;
