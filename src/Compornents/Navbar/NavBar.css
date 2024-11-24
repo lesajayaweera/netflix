@@ -4,15 +4,15 @@
     width: 100%;
     top: 0;
     z-index: 999;
-    background: linear-gradient(to top,transparent 0%,rgb(0,0,0,0.7) 50%);
+    background: linear-gradient(to top,transparent 0%,rgb(0,0,0,0.6) 50%);
 }
 /* for the Main Container when the  page is scrolled */
 .navbar-scrolled{
-    background-color: var(--main-color);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 999;
+    background-color:var(--main-color) ;
 }
 
 /* Second Main Container */
@@ -108,7 +108,7 @@
 .profile-container{
     cursor: pointer;
 }
-.profile-container:hover{
+.image-profile-main-container:hover{
     .options{
         display: flex;
         flex-direction: column;
