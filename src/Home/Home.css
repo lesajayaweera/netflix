@@ -1,7 +1,4 @@
-.home{
-    background-color: var(--main-color);
-    color: var(--color);
-    height: 100rem;
+.home {
+  background-color: var(--main-color);
+  color: var(--color);
 }
-
-
